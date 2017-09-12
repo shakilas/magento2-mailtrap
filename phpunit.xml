@@ -25,6 +25,14 @@
             <directory suffix="Test.php">tests/Integration</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+            <exclude>
+                <file>src/registration.php</file>
+            </exclude>
+        </whitelist>
+    </filter>
     <!-- PHP INI settings and constants definition -->
     <php>
         <includePath>../../../dev/tests/integration</includePath>

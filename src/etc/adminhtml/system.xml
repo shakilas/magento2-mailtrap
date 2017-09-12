@@ -39,8 +39,9 @@
                         <validate>validate-number validate-zero-or-greater</validate>
                         <config_path>system/mailtrap/port</config_path>
                     </field>
-                    <field id="auth" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
-                        <label>Auth</label>
+                    <field id="auth" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                        <label>Authentication</label>
+                        <source_model>Xylo\Mailtrap\Model\System\Config\Source\SmtpAuth</source_model>
                         <config_path>system/mailtrap/auth</config_path>
                     </field>
                 </group>

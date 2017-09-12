@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Mailtrap.io - extension for Magento 2
+ *
+ * NOTICE OF LICENSE
+ *
+ * This work is licensed under the terms of the MIT license.
+ * For a copy, see <https://opensource.org/licenses/MIT>.
+ *
+ * @category   Xylo
+ * @package    Xylo_Mailtrap
+ * @author     Benoît Xylo <benoit.xylo@traverse.waw.pl>
+ * @copyright  (c) 2017 Benoît Xylo
+ * @license    https://opensource.org/licenses/MIT
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Xylo\Mailtrap\Service\ConfigInterface" type="Xylo\Mailtrap\Service\Config"/>
+    <preference for="Magento\Framework\Mail\TransportInterface" type="Xylo\Mailtrap\Service\Mail\Transport"/>
+</config>

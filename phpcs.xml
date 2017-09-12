@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Mailtrap.io - extension for Magento 2
+ *
+ * NOTICE OF LICENSE
+ *
+ * This work is licensed under the terms of the MIT license.
+ * For a copy, see <https://opensource.org/licenses/MIT>.
+ *
+ * @category   Xylo
+ * @package    Xylo_Mailtrap
+ * @author     Benoît Xylo <benoit.xylo@traverse.waw.pl>
+ * @copyright  (c) 2017 Benoît Xylo
+ * @license    https://opensource.org/licenses/MIT
+ */
+-->
+<ruleset name="Mailtrap.io for Magento 2">
+    <description>Mailtrap.io for Magento 2 coding standards</description>
+    <config name="installed_paths" value="vendor/magento/marketplace-eqp"/>
+    <rule ref="PSR2"/>
+    <rule ref="MEQP2"/>
+</ruleset>

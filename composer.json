@@ -1,0 +1,13 @@
+{
+    "name": "xylodev/magento2-mailtrap",
+    "description": "Mailtrap.io integration for Magento 2",
+    "type": "magento2-module",
+    "authors": [
+        {
+            "name": "Benoît Xylo",
+            "email": "benoit.xylo@traverse.waw.pl"
+        }
+    ],
+    "license": "MIT",
+    "require": {}
+}

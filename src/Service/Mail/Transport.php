@@ -51,5 +51,12 @@ class Transport extends \Zend_Mail_Transport_Smtp implements \Magento\Framework\
         if (!$this->message instanceof \Zend_Mail) {
             throw new \InvalidArgumentException('The message should be an instance of \Zend_Mail');
         }
+
+        try {
+            parent::send($this->message);
+        } catch (\Exception $e) {
+            // @codingStandardsIgnoreLine
+            throw new \Magento\Framework\Exception\MailException(new \Magento\Framework\Phrase($e->getMessage()), $e);
+        }
     }
 }
